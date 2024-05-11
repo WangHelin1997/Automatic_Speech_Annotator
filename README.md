@@ -1,8 +1,19 @@
 # Automatic_Speech_Annotator
-Automatic speech annotator processing speech with voice activaty detection, overlapping speech detection, speaker diarization and automatic speech recognition
+Automatic speech annotator processing speech with voice activaty detection, overlapping speech detection, speaker diarization and automatic speech recognition, which works for conversional English speech data.
+This code can generate files for ![Gecko](https://github.com/gong-io/gecko) annotations and ![GPT-4](https://openai.com/index/gpt-4/) annotations.
 
 ## Pipeline
 ![Pipeline](https://github.com/WangHelin1997/Automatic_Speech_Annotator/blob/main/demo.png)
+
+## Installation
+
+Install all Python package requirements:
+
+```bash
+pip install -r requirements.txt
+```
+
+**Note**: code is tested on Python==3.10.13.
 
 ## Processing
 
@@ -16,3 +27,9 @@ Automatic speech annotator processing speech with voice activaty detection, over
 If you find this repo helpful, feel free to cite this paper:
 
 [1] Finding Spoken Identifications: Using GPT-4 Annotation For An Efficient And Fast Dataset Creation Pipeline," Jahan, M., Wang, H. Thebaud, T., Sun, Y., Le, G., Fagyal, Z., Scharenborg, O., Hasegawa-Johnson, M., Moro-Velazquez, L., Dehak, N. International LREC-Coling Joint Conference, Torino, Italy, May 20-24, 2024.
+
+## Reference
+
+[1] ![Gecko](https://github.com/gong-io/gecko)
+[2] ![Whisper](https://github.com/openai/whisper)
+[3] ![pyannote-audio](https://github.com/pyannote/pyannote-audio)
