@@ -201,7 +201,7 @@ def main(datadir, savedir, filename):
 
 if __name__ == '__main__':
     datadir = './fairness/data/japanesedata/Audios' # Audio path to process
-    savedir = './fairness/data/japanesedata/' # Save path
+    savedir = './fairness/data/japanesedata/' # Output path
     for root, dir, files in os.walk(datadir):
         for f in tqdm(files):
             if f.endswith('.wav'):
