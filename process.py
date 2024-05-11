@@ -187,11 +187,11 @@ def main(datadir, savedir, filename):
     savechatgptpath = os.path.join(savedir, 'ChatGPT', filename+'.txt')
 
     vadpipeline = VoiceActivityDetection("pyannote/segmentation",
-                                        use_auth_token="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")
+                                        use_auth_token="") # Fill in with your huggingface token
     odpipeline = OverlappedSpeechDetection("pyannote/segmentation", 
-                                use_auth_token="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")
+                                use_auth_token="") # Fill in with your huggingface token
     sdpipeline = Pipeline.from_pretrained("pyannote/speaker-diarization-3.1",
-                                            use_auth_token="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")
+                                            use_auth_token="") # Fill in with your huggingface token
     asrmodel = whisper.load_model("medium.en")
     VadOd_process(vadpipeline, odpipeline, audiopath, saveaudiopath)
     Sd_process(sdpipeline, saveaudiopath, savesdpath)
@@ -200,8 +200,8 @@ def main(datadir, savedir, filename):
     chatgpt(saveasrpath, savechatgptpath)
 
 if __name__ == '__main__':
-    datadir = './fairness/data/japanesedata/Audios'
-    savedir = './fairness/data/japanesedata/'
+    datadir = './fairness/data/japanesedata/Audios' # Audio path to process
+    savedir = './fairness/data/japanesedata/' # Save path
     for root, dir, files in os.walk(datadir):
         for f in tqdm(files):
             if f.endswith('.wav'):
