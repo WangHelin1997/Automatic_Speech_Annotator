@@ -1,6 +1,6 @@
 # Automatic_Speech_Annotator
 Automatic speech annotator processing speech with voice activaty detection, overlapping speech detection, speaker diarization and automatic speech recognition, which works for conversional English speech data.
-This code can generate files for ![Gecko](https://github.com/gong-io/gecko) annotations and ![GPT-4](https://openai.com/index/gpt-4/) annotations.
+This code can generate files for [Gecko](https://github.com/gong-io/gecko) annotations and [GPT-4](https://openai.com/index/gpt-4/) annotations.
 
 ## Pipeline
 ![Pipeline](https://github.com/WangHelin1997/Automatic_Speech_Annotator/blob/main/demo.png)
