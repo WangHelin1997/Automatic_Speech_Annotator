@@ -30,6 +30,6 @@ If you find this repo helpful, feel free to cite this paper:
 
 ## Reference
 
-[1] ![Gecko](https://github.com/gong-io/gecko)
-[2] ![Whisper](https://github.com/openai/whisper)
-[3] ![pyannote-audio](https://github.com/pyannote/pyannote-audio)
+1. ![Gecko](https://github.com/gong-io/gecko)
+2. ![Whisper](https://github.com/openai/whisper)
+3. ![pyannote-audio](https://github.com/pyannote/pyannote-audio)
