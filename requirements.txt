@@ -1,0 +1,6 @@
+torch
+torchaudio
+librosa
+tqdm
+pyannote.audio
+openai-whisper
