@@ -40,7 +40,9 @@ def VadOd_process(vadpipeline, odpipeline, audiopath, savepath):
         for r in removes:
             start = int(r[0]*sr)
             end = int(r[1]*sr)
-            audio[start:end]=np.zeros(end-start)
+            final_timestep = audio.shape[0]
+            span = end-start if final_timestep > end else final_timestep-start
+            audio[start:end]=np.zeros(span)
         os.makedirs(savepath.rsplit('/',1)[0], exist_ok=True)
         sf.write(savepath, audio, sr)
 
